@@ -1,0 +1,78 @@
+*{padding:0;margin:0;border:0;box-sizing: border-box;}
+
+body{
+    background:beige url('img/hatter.jpg');
+    color:beige } 
+
+nav, footer {
+    background: #9c9c9c;
+    color:white;
+    padding:2px 5px;} 
+
+nav ul{padding:0;} 
+
+nav ul li {
+    list-style-type: none;
+    padding:0 15px;} 
+
+nav a {
+    text-decoration: none;
+    color:#ffcc66} 
+
+nav a:hover{color:coral;} 
+
+footer {text-align:center;} 
+main{
+    
+    margin:auto;
+    width: 95%;
+} 
+article{
+    
+    padding: 10px;
+    text-align: justify;
+    color: beige;
+    margin: 5px;
+    background: #9c9c9c;
+    flex: 1 1 200px;
+}
+article header{
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    margin:auto;
+    height: 30px;
+    width: 80%;
+    background-color: rgb(190, 38, 38);
+    color:white;
+}
+section{
+    border:2px solid gray;
+    display:flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+article:nth-of-type(4){ 
+   flex-grow: 10;  
+} 
+.flexContainer { 
+
+    display:flex; 
+
+    flex-flow:row wrap;  
+
+} 
+article:nth-of-type(1){order: 3}
+article:nth-of-type(2){order: 2}
+article:nth-of-type(3){order: 5}
+article:nth-of-type(4){order: 1}
+article:nth-of-type(5){order: 4}
+article:nth-of-type(6){order: 6}
+
+@media all and (max-width:500px){
+    section{
+        flex-flow: column wrap;
+    }
+}
